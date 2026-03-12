@@ -5,9 +5,9 @@ import { siteConfig } from "@/lib/constants";
 import { MapPin, Phone, Mail, Facebook } from "lucide-react";
 
 export const metadata = generatePageMetadata({
-  title: "Services — IT Infrastructure & Security Solutions",
+  title: "Services — IT Infrastructure, Security & IoT Solutions",
   description:
-    "IT infrastructure services including new installations and upgrades, plus security solutions including CCTV, access control, and alarm systems for rural Victoria.",
+    "IT infrastructure services, security solutions, and custom IoT embedded systems (ESP32, LoRa) for agriculture and rural Victoria.",
   path: "/services",
 });
 
@@ -50,6 +50,30 @@ const securityServices = [
   },
 ];
 
+const iotServices = [
+  {
+    title: "Agricultural Sensor Networks",
+    image: "/images/about-rural.jpg",
+    subtitle: "Precision Telemetry & Monitoring",
+    description:
+      "Leverage long-range wireless telemetry and low-power edge nodes to gather real-time environmental data across vast agricultural landscapes. Ideal for soil moisture, temperature tracking, and water flow analysis.",
+  },
+  {
+    title: "Embedded Hardware Design",
+    image: "/images/rural-landscape.jpg",
+    subtitle: "Custom Hardware & Sensor Integration",
+    description:
+      "From concept to field-ready hardware, we develop custom firmware and rugged sensor integrations tailored for harsh rural environments. Our embedded solutions are built to be robust, power-efficient, and easily deployable.",
+  },
+  {
+    title: "Data Orchestration & APIs",
+    image: "/images/security-stock.jpg",
+    subtitle: "Cloud Architecture & Data Platforms",
+    description:
+      "Transform raw sensor data into actionable insights. We build automated control systems, robust APIs, and scalable data platforms to power custom analytics dashboards like our HarvestPro intelligence suite.",
+  },
+];
+
 export default function ServicesPage() {
   return (
     <>
@@ -70,7 +94,7 @@ export default function ServicesPage() {
             Services
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4">
-            IT Infrastructure &amp; Security Solutions
+            IT Infrastructure, Security &amp; IoT
           </h1>
         </div>
       </section>
@@ -135,6 +159,50 @@ export default function ServicesPage() {
               <div
                 key={service.title}
                 className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow"
+              >
+                <div className="relative h-52">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-sky-700 font-medium mt-1">
+                    {service.subtitle}
+                  </p>
+                  <p className="mt-3 text-sm text-gray-600 leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* IoT & Embedded Systems */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              IoT & Embedded Systems
+            </h2>
+            <p className="mt-4 text-lg text-sky-700 font-medium">
+              Agricultural Tech & Remote Telemetry
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {iotServices.map((service) => (
+              <div
+                key={service.title}
+                className="bg-gray-50 rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow border border-gray-100"
               >
                 <div className="relative h-52">
                   <Image
