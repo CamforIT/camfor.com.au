@@ -1,0 +1,50 @@
+import { NextResponse } from "next/server";
+import { contactFormSchema } from "@/lib/schemas";
+
+export async function POST(request: Request) {
+  try {
+    const body = await request.json();
+
+    // Validate input matches contact form schema
+    const result = contactFormSchema.safeParse(body);
+    if (!result.success) {
+      return NextResponse.json(
+        { error: "Invalid form data", details: result.error.flatten() },
+        { status: 400 }
+      );
+    }
+
+    const { email, subject, message } = result.data;
+
+    // TODO: Integrate with email service (Resend, SendGrid, etc.)
+    // For now, log the submission and return success
+    console.log("Contact form submission:", {
+      email,
+      subject,
+      message,
+      timestamp: new Date().toISOString(),
+    });
+
+    // Example Resend integration (uncomment when ready):
+    // import { Resend } from 'resend';
+    // const resend = new Resend(process.env.RESEND_API_KEY);
+    // await resend.emails.send({
+    //   from: 'Camfor Website <noreply@camfor.com.au>',
+    //   to: 'inquiries@camfor.com.au',
+    //   replyTo: email,
+    //   subject: `[Website] ${subject}`,
+    //   text: `From: ${email}\n\n${message}`,
+    // });
+
+    return NextResponse.json(
+      { success: true, message: "Message received successfully" },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("Contact form error:", error);
+    return NextResponse.json(
+      { error: "Internal server error" },
+      { status: 500 }
+    );
+  }
+}

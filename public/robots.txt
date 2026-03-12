@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Host
+Host: https://www.camfor.com.au
+
+# Sitemaps
+Sitemap: https://www.camfor.com.au/sitemap.xml

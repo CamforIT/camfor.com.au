@@ -1,0 +1,50 @@
+{
+  "pages": [
+    {
+      "slug": "/",
+      "title": "Camfor — Connecting & Protecting Rural Communities",
+      "description": "Camfor is a pioneering IT infrastructure and full security hardware provider dedicated to empowering rural Victoria with cutting-edge connectivity and security solutions.",
+      "contentFile": "home.md",
+      "lastModified": "2025-01-06"
+    },
+    {
+      "slug": "/about",
+      "title": "About Us — Camfor PTY LTD",
+      "description": "Learn about Camfor's mission to connect and protect rural communities in Victoria, Australia. Founded by Gerard with decades of global connectivity expertise.",
+      "contentFile": "about.md",
+      "lastModified": "2025-01-06"
+    },
+    {
+      "slug": "/services",
+      "title": "Services — IT Infrastructure & Security Solutions",
+      "description": "IT infrastructure services including new installations and upgrades, plus security solutions including CCTV, access control, and alarm systems for rural Victoria.",
+      "contentFile": "services.md",
+      "lastModified": "2025-01-06"
+    },
+    {
+      "slug": "/contact",
+      "title": "Contact Us — Camfor PTY LTD",
+      "description": "Get in touch with Camfor for your IT infrastructure and security needs. Located in Macedon, Victoria.",
+      "contentFile": "contact.md",
+      "lastModified": "2025-01-06"
+    },
+    {
+      "slug": "/projects",
+      "title": "Projects — Camfor PTY LTD",
+      "description": "Explore Camfor's portfolio of IT infrastructure and security projects across rural Victoria.",
+      "contentFile": "projects.md",
+      "lastModified": "2025-01-06"
+    }
+  ],
+  "site": {
+    "name": "Camfor PTY LTD",
+    "domain": "www.camfor.com.au",
+    "tagline": "Connecting & Protecting Rural Communities",
+    "email": "inquiries@camfor.com.au",
+    "phone": "0476 598 141",
+    "location": "Macedon Ranges, Victoria, Australia",
+    "facebook": "https://www.facebook.com/profile.php?id=100090029043402",
+    "abn": "",
+    "copyright": "2022"
+  }
+}

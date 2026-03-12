@@ -1,0 +1,12 @@
+- This is the Camfor (camfor.com.au) website — a Next.js 16 App Router project.
+- Stack: TypeScript, TailwindCSS 4, React Hook Form, Zod, Lucide icons.
+- Static brochure site for an IT infrastructure & security company in rural Victoria, Australia.
+- All pages use static generation (no SSR/ISR).
+- Forms submit to `/api/contact` — currently logs; production should use Resend.
+- Site config (email, phone, nav) lives in `src/lib/constants.ts`.
+- Form schemas live in `src/lib/schemas.ts`.
+- SEO metadata helpers in `src/lib/seo.ts`.
+- Images are in `public/images/` — use `next/image` for all image rendering.
+- Use semantic HTML and keep Lighthouse accessibility score above 90.
+- Colour palette: sky-700 (#0369a1) as primary brand colour.
+- Keep code clean, no Wix artefacts. Follow Australian English spelling.

@@ -1,0 +1,46 @@
+{
+  "urls": [
+    {
+      "url": "https://www.camfor.com.au/",
+      "localPath": "/",
+      "title": "Camfor — Connecting & Protecting Rural Communities",
+      "lastModified": "2025-01-06",
+      "status": "migrated"
+    },
+    {
+      "url": "https://www.camfor.com.au/about",
+      "localPath": "/about",
+      "title": "About Us — Camfor PTY LTD",
+      "lastModified": "2025-01-06",
+      "status": "migrated"
+    },
+    {
+      "url": "https://www.camfor.com.au/services",
+      "localPath": "/services",
+      "title": "Services — IT Infrastructure & Security Solutions",
+      "lastModified": "2025-01-06",
+      "status": "migrated"
+    },
+    {
+      "url": "https://www.camfor.com.au/contact",
+      "localPath": "/contact",
+      "title": "Contact Us — Camfor PTY LTD",
+      "lastModified": "2025-01-06",
+      "status": "migrated"
+    },
+    {
+      "url": "https://www.camfor.com.au/projects",
+      "localPath": "/projects",
+      "title": "Projects — Camfor PTY LTD",
+      "lastModified": "2025-01-06",
+      "status": "migrated"
+    }
+  ],
+  "assets": {
+    "images": 17,
+    "pdfs": 0,
+    "videos": 0
+  },
+  "crawledAt": "2026-02-16",
+  "source": "Wix (pages-sitemap.xml)"
+}

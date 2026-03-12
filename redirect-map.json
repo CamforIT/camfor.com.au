@@ -1,0 +1,35 @@
+{
+  "redirects": [
+    {
+      "old": "https://www.camfor.com.au/",
+      "new": "/",
+      "status": 200,
+      "note": "Homepage — same slug"
+    },
+    {
+      "old": "https://www.camfor.com.au/about",
+      "new": "/about",
+      "status": 200,
+      "note": "About — same slug"
+    },
+    {
+      "old": "https://www.camfor.com.au/services",
+      "new": "/services",
+      "status": 200,
+      "note": "Services — same slug"
+    },
+    {
+      "old": "https://www.camfor.com.au/contact",
+      "new": "/contact",
+      "status": 200,
+      "note": "Contact — same slug"
+    },
+    {
+      "old": "https://www.camfor.com.au/projects",
+      "new": "/projects",
+      "status": 200,
+      "note": "Projects — same slug"
+    }
+  ],
+  "notes": "All 5 Wix pages use identical slugs to the new site. No 301 redirects needed for primary URLs. Additional redirects for common Wix alternate patterns (e.g., /home, /about-us) are configured in next.config.ts."
+}
