@@ -29,14 +29,22 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     locale: "en_AU",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: siteConfig.shortName,
+      },
+    ],
   },
   robots: {
     index: true,
     follow: true,
   },
   icons: {
-    icon: "/images/camfor-logo.png",
-    apple: "/images/camfor-logo.png",
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 

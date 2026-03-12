@@ -98,10 +98,10 @@ export default function HomePage() {
             </div>
             <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Fill out below to help us understand your unique security needs!
+                Book Your Free Security Assessment
               </h3>
               <p className="text-sm text-gray-500 mb-6">
-                We will be in touch with customised options ASAP.
+                We&apos;ll visit your property and provide a no-obligation quote with customised options.
               </p>
               <SecurityAssessmentForm />
             </div>
@@ -114,9 +114,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 bg-sky-50 rounded-xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-sky-700 mb-4">
-                Take Our Quick IT Survey!
+              <h3 className="text-xl font-bold text-sky-700 mb-1">
+                Free IT Needs Assessment
               </h3>
+              <p className="text-sm text-gray-500 mb-4">2 minutes · No obligation</p>
               <ITSurveyForm />
             </div>
             <div className="order-1 md:order-2">
@@ -124,13 +125,25 @@ export default function HomePage() {
                 Camfor IT
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
-                Unsure where to start with your IT needs?
+                Not sure where to start?
               </h2>
               <p className="mt-4 text-gray-600">
-                Fill out our survey for some custom solutions! We&apos;ll
-                analyse your requirements and provide tailored recommendations
-                for your specific situation.
+                Tell us a bit about yourself and we&apos;ll come back to you with tailored IT recommendations for your specific situation — whether you&apos;re a homeowner, farmer, or business.
               </p>
+              <ul className="mt-6 space-y-2 text-sm text-gray-600">
+                <li className="flex items-center gap-2">
+                  <span className="w-5 h-5 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">1</span>
+                  Tell us who you are and where you&apos;re located
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-5 h-5 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">2</span>
+                  We assess the best connectivity options for your area
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-5 h-5 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-bold text-xs">3</span>
+                  We get back to you with a personalised recommendation
+                </li>
+              </ul>
             </div>
           </div>
         </div>

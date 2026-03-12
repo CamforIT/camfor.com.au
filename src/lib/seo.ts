@@ -12,7 +12,7 @@ export function generatePageMetadata({
   title,
   description,
   path = "",
-  image = "/images/camfor-logo.png",
+  image = "/images/og-image.jpg",
 }: PageSEO): Metadata {
   const url = `${siteConfig.url}${path}`;
 
@@ -33,8 +33,8 @@ export function generatePageMetadata({
       images: [
         {
           url: image,
-          width: 662,
-          height: 662,
+          width: 1200,
+          height: 630,
           alt: siteConfig.shortName,
         },
       ],
