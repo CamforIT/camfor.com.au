@@ -29,7 +29,17 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="relative bg-gray-900 text-white overflow-hidden">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 block md:hidden">
+          <Image
+            src="/images/hero-tech-mobile.webp"
+            alt="Technology connectivity"
+            fill
+            className="object-cover opacity-30"
+            priority
+            sizes="100vw"
+          />
+        </div>
+        <div className="absolute inset-0 hidden md:block">
           <Image
             src="/images/hero-tech.webp"
             alt="Technology connectivity"
@@ -89,13 +99,24 @@ export default function HomePage() {
                 touch ASAP!
               </p>
               <div className="relative mt-8 h-64 md:h-80 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/security-assessment.webp"
-                  alt="Security solutions"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
+                <div className="absolute inset-0 block md:hidden">
+                  <Image
+                    src="/images/security-assessment-mobile.webp"
+                    alt="Security solutions"
+                    fill
+                    className="object-cover"
+                    sizes="100vw"
+                  />
+                </div>
+                <div className="absolute inset-0 hidden md:block">
+                  <Image
+                    src="/images/security-assessment.webp"
+                    alt="Security solutions"
+                    fill
+                    className="object-cover"
+                    sizes="50vw"
+                  />
+                </div>
               </div>
             </div>
             <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
@@ -178,7 +199,16 @@ export default function HomePage() {
 
       {/* Why Camfor */}
       <section className="relative bg-gray-900 text-white py-16 md:py-24 overflow-hidden">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 block md:hidden">
+          <Image
+            src="/images/rural-landscape-mobile.webp"
+            alt="Rural Victorian landscape"
+            fill
+            className="object-cover opacity-20"
+            sizes="100vw"
+          />
+        </div>
+        <div className="absolute inset-0 hidden md:block">
           <Image
             src="/images/rural-landscape.webp"
             alt="Rural Victorian landscape"
@@ -272,13 +302,24 @@ export default function HomePage() {
               </div>
             </div>
             <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src="/images/data-installation.webp"
-                alt="Data installation services"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+              <div className="absolute inset-0 block md:hidden">
+                <Image
+                  src="/images/data-installation-mobile.webp"
+                  alt="Data installation services"
+                  fill
+                  className="object-cover"
+                  sizes="100vw"
+                />
+              </div>
+              <div className="absolute inset-0 hidden md:block">
+                <Image
+                  src="/images/data-installation.webp"
+                  alt="Data installation services"
+                  fill
+                  className="object-cover"
+                  sizes="50vw"
+                />
+              </div>
             </div>
           </div>
         </div>

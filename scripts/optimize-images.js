@@ -25,12 +25,20 @@ async function optimizeImages() {
       
       const fileNameRaw = path.parse(file).name;
       const webpPath = path.join(publicImagesDir, `${fileNameRaw}.webp`);
+      const mobileWebpPath = path.join(publicImagesDir, `${fileNameRaw}-mobile.webp`);
       
       if (!fs.existsSync(webpPath)) {
         await sharp(inputPath)
+          .resize(1200) // Max width for desktop
           .webp({ quality: 80 })
           .toFile(webpPath);
         console.log(`Generated WebP: ${webpPath}`);
+        
+        await sharp(inputPath)
+          .resize(600) // Max width for mobile
+          .webp({ quality: 80 })
+          .toFile(mobileWebpPath);
+        console.log(`Generated Mobile WebP: ${mobileWebpPath}`);
       }
     }
   }
