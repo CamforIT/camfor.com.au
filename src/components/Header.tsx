@@ -57,6 +57,8 @@ export default function Header() {
               className="md:hidden p-2 text-gray-700"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileOpen}
+              aria-controls="mobile-menu"
             >
               {mobileOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -65,7 +67,12 @@ export default function Header() {
 
         {/* Mobile nav */}
         {mobileOpen && (
-          <div className="md:hidden border-t bg-white">
+          <div
+            id="mobile-menu"
+            className="md:hidden border-t bg-white"
+            role="region"
+            aria-label="Mobile Navigation"
+          >
             <nav className="px-4 py-4 flex flex-col gap-3">
               {navLinks.map((link) => (
                 <Link
