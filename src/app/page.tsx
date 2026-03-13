@@ -10,10 +10,12 @@ import {
   Users,
   Heart,
   CheckCircle,
+  Database,
 } from "lucide-react";
 
 const features = [
   { icon: Wifi, label: "Tailored Connectivity Solutions" },
+  { icon: Database, label: "Agricultural Data & IoT" },
   { icon: Award, label: "Local Expertise, Global Standards" },
   { icon: CheckCircle, label: "Proven Reliability" },
   { icon: Clock, label: "Ongoing 24/7 Support" },
@@ -43,13 +45,13 @@ export default function HomePage() {
               Connecting &amp; Protecting Rural Communities
             </h1>
             <p className="mt-6 text-lg text-gray-300 max-w-xl">
-              Camfor is a pioneering IT infrastructure and full security hardware
+              Camfor is a pioneering IT infrastructure, IoT, and security hardware
               provider dedicated to empowering rural Victoria with cutting-edge
-              connectivity and security solutions.
+              technology and reliable solutions.
             </p>
             <p className="mt-4 text-gray-300">
               Specialising in the design, deployment, and management of
-              comprehensive IT networks and security solutions, we ensure that
+              comprehensive IT networks, agricultural telemetry, and security solutions, we ensure that
               all Victorians can thrive and feel safe.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
