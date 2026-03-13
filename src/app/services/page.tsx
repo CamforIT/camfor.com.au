@@ -29,21 +29,21 @@ const faqs = [
 const iotServices = [
   {
     title: "Agricultural Sensor Networks",
-    image: "/images/rural-landscape.jpg",
+    image: "/images/security-stock.jpg",
     subtitle: "Precision Telemetry & Monitoring",
     description:
       "Leverage long-range wireless telemetry and low-power edge nodes to gather real-time environmental data across vast agricultural landscapes. Ideal for soil moisture, temperature tracking, and water flow analysis.",
   },
   {
     title: "Embedded Hardware Design",
-    image: "/images/about-rural.jpg",
+    image: "/images/rural-landscape.jpg",
     subtitle: "Custom Hardware & Sensor Integration",
     description:
       "From concept to field-ready hardware, we develop custom firmware and rugged sensor integrations tailored for harsh rural environments. Our embedded solutions are built to be robust, power-efficient, and easily deployable.",
   },
   {
     title: "Data Orchestration & APIs",
-    image: "/images/data-installation.jpg",
+    image: "/images/about-rural.jpg",
     subtitle: "Cloud Architecture & Data Platforms",
     description:
       "Transform raw sensor data into actionable insights. We build automated control systems, robust APIs, and scalable data platforms to power custom analytics dashboards like our HarvestPro intelligence suite.",
