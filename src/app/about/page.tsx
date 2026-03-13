@@ -77,28 +77,26 @@ export default function AboutPage() {
               </h2>
               <div className="mt-6 space-y-4 text-gray-600">
                 <p>
-                  Camfor is founded by Gerard, who brings decades of experience
-                  from leading significant connectivity projects worldwide to the
-                  heart of the Macedon Ranges.
+                  Camfor was founded by Gerard, who brings decades of experience leading significant connectivity projects worldwide back to the heart of the Macedon Ranges.
                 </p>
                 <p>
                   After years of contributing to global advancements in digital
-                  infrastructure, Gerard sought a more meaningful impact closer to
+                  infrastructure, Gerard sought to make a more meaningful impact closer to
                   home. Settling in the Macedon Ranges and starting a hobby farm,
                   he witnessed firsthand the connectivity challenges faced by
                   rural communities.
                 </p>
                 <p>
                   Driven by a desire to apply his extensive expertise where
-                  it&apos;s most needed, Gerard founded Camfor. Our goal is
-                  straightforward: to provide rural and urban Victoria with access
-                  to reliable, high-speed internet. Transitioning from
+                  it is most needed, Gerard founded Camfor. Our goal is
+                  straightforward: to provide both rural and urban Victoria with access
+                  to reliable, high-speed connectivity. Transitioning from
                   international projects to focusing on local needs,
                   Gerard&apos;s journey underpins Camfor&apos;s commitment to
                   enhancing digital accessibility for all.
                 </p>
                 <p>
-                  Through Camfor, we&apos;re turning Gerard&apos;s vision into
+                  Through Camfor, we are turning Gerard&apos;s vision into
                   reality, ensuring no community is left behind in today&apos;s
                   digital world.
                 </p>
