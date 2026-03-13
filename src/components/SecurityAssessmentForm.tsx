@@ -118,7 +118,7 @@ export default function SecurityAssessmentForm() {
 
       <div>
         <label htmlFor="sa-phone" className="block text-sm font-medium text-gray-700 mb-1">
-          Phone <span className="text-gray-400 font-normal">(optional)</span>
+          Phone <span className="text-gray-500 font-normal">(optional)</span>
         </label>
         <input
           id="sa-phone"

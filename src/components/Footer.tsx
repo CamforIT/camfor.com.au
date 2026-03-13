@@ -114,7 +114,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-10 pt-6 border-t border-gray-800 text-center text-xs text-gray-500">
+        <div className="mt-10 pt-6 border-t border-gray-800 text-center text-xs text-gray-400">
           © {copyrightRange} {siteConfig.name}. All rights reserved.
         </div>
       </div>

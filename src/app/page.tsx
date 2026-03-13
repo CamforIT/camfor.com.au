@@ -102,7 +102,7 @@ export default function HomePage() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 Book Your Free Security Assessment
               </h3>
-              <p className="text-sm text-gray-500 mb-6">
+              <p className="text-sm text-gray-600 mb-6">
                 We&apos;ll visit your property and provide a no-obligation quote with customised options.
               </p>
               <SecurityAssessmentForm />
@@ -119,7 +119,7 @@ export default function HomePage() {
               <h3 className="text-xl font-bold text-sky-700 mb-1">
                 Free IT Needs Assessment
               </h3>
-              <p className="text-sm text-gray-500 mb-4">2 minutes · No obligation</p>
+              <p className="text-sm text-gray-600 mb-4">2 minutes · No obligation</p>
               <ITSurveyForm />
             </div>
             <div className="order-1 md:order-2">
