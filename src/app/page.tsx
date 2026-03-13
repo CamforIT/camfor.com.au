@@ -249,18 +249,25 @@ export default function HomePage() {
                 requirements for your protection. This includes alarm, access
                 control and CCTV options.
               </p>
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-8">
                 <Link
                   href="/services"
-                  className="px-6 py-3 bg-sky-700 text-white font-semibold rounded-md hover:bg-sky-800 transition-colors"
+                  className="inline-flex items-center gap-2 text-sky-700 font-semibold hover:text-sky-800 transition-colors"
                 >
-                  Learn More
-                </Link>
-                <Link
-                  href="/contact"
-                  className="px-6 py-3 border-2 border-sky-700 text-sky-700 font-semibold rounded-md hover:bg-sky-700 hover:text-white transition-colors"
-                >
-                  Contact Us
+                  Explore Our Comprehensive IT & Security Services
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
                 </Link>
               </div>
             </div>
