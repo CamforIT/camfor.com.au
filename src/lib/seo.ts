@@ -67,14 +67,29 @@ export function generateLocalBusinessJsonLd() {
       addressRegion: "Victoria",
       addressCountry: "AU",
     },
-    areaServed: {
-      "@type": "Place",
-      name: "Rural Victoria, Australia",
-    },
+    areaServed: siteConfig.serviceAreas.map((area) => ({
+      "@type": "City",
+      name: area,
+    })),
     founder: {
       "@type": "Person",
       name: siteConfig.founder,
     },
     sameAs: [siteConfig.facebook],
+  };
+}
+
+export function generateFAQJsonLd(faqs: { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
   };
 }

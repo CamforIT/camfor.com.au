@@ -59,13 +59,13 @@ export default function HomePage() {
                 href="/about"
                 className="px-6 py-3 bg-sky-700 text-white font-semibold rounded-md hover:bg-sky-800 transition-colors"
               >
-                Learn More
+                Discover Our Local Approach
               </Link>
               <Link
                 href="/contact"
                 className="px-6 py-3 border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-gray-900 transition-colors"
               >
-                Contact Us
+                Request a Farm Security Assessment
               </Link>
             </div>
           </div>

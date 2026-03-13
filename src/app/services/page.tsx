@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, generateFAQJsonLd } from "@/lib/seo";
 import ServiceInquiryForm from "@/components/ServiceInquiryForm";
 import { siteConfig } from "@/lib/constants";
 import { MapPin, Phone, Mail, Facebook } from "lucide-react";
@@ -10,6 +10,21 @@ export const metadata = generatePageMetadata({
     "IT infrastructure services, security solutions, and custom IoT embedded systems (ESP32, LoRa) for agriculture and rural Victoria.",
   path: "/services",
 });
+
+const faqs = [
+  {
+    question: "Do you install CCTV and alarm systems in remote areas like Bendigo and Ballarat?",
+    answer: "Yes, Camfor specializes in deploying high-definition CCTV, access control, and alarm systems across rural Victoria, including remote agricultural properties where standard connectivity might be a challenge."
+  },
+  {
+    question: "How do your Agricultural Sensor Networks work?",
+    answer: "We utilize long-range, low-power LoRaWAN wireless telemetry to monitor soil moisture, temperature, and water flow over vast distances. This allows farm monitoring without relying on traditional 4G/5G connections."
+  },
+  {
+    question: "Can I upgrade my existing IT network without throwing out my current hardware?",
+    answer: "Absolutely. Our 'Brownfields' IT service focuses on analyzing your existing digital infrastructure and pinpointing areas for improvement, seamlessly integrating modern speed enhancements and security upgrades."
+  }
+];
 
 const itServices = [
   {
@@ -253,6 +268,23 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* FAQs */}
+      <section className="bg-gray-50 py-16 md:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900">Frequently Asked Questions</h2>
+          </div>
+          <div className="space-y-6">
+            {faqs.map((faq, index) => (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-lg font-bold text-gray-900">{faq.question}</h3>
+                <p className="mt-2 text-gray-600 leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Form */}
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -267,20 +299,20 @@ export default function ServicesPage() {
               </p>
               <div className="mt-8 space-y-4">
                 <div className="flex items-center gap-3 text-gray-600">
-                  <MapPin className="w-5 h-5 text-sky-700 flex-shrink-0" />
-                  <span>Macedon Ranges, Victoria</span>
+                  <MapPin className="w-5 h-5 text-sky-700" />
+                  <span>Serving {siteConfig.serviceAreas.join(", ")} & beyond</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-600">
-                  <Phone className="w-5 h-5 text-sky-700 flex-shrink-0" />
+                  <Phone className="w-5 h-5 text-sky-700" />
                   <a
-                    href={siteConfig.phoneHref}
+                    href={`tel:${siteConfig.phone.replace(/\D/g,'')}`}
                     className="hover:text-sky-700 transition-colors"
                   >
                     {siteConfig.phone}
                   </a>
                 </div>
                 <div className="flex items-center gap-3 text-gray-600">
-                  <Mail className="w-5 h-5 text-sky-700 flex-shrink-0" />
+                  <Mail className="w-5 h-5 text-sky-700" />
                   <a
                     href={`mailto:${siteConfig.email}`}
                     className="hover:text-sky-700 transition-colors"
@@ -289,7 +321,7 @@ export default function ServicesPage() {
                   </a>
                 </div>
                 <div className="flex items-center gap-3 text-gray-600">
-                  <Facebook className="w-5 h-5 text-sky-700 flex-shrink-0" />
+                  <Facebook className="w-5 h-5 text-sky-700" />
                   <a
                     href={siteConfig.facebook}
                     target="_blank"
@@ -302,11 +334,20 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="bg-gray-50 rounded-xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-6">
+                Service Inquiry
+              </h3>
               <ServiceInquiryForm />
             </div>
           </div>
         </div>
       </section>
+
+      {/* Inject FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(generateFAQJsonLd(faqs)) }}
+      />
     </>
   );
 }
