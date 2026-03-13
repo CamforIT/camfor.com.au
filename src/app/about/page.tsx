@@ -83,22 +83,25 @@ export default function AboutPage() {
                   After years of contributing to global advancements in digital
                   infrastructure, Gerard sought to make a more meaningful impact closer to
                   home. Settling in the Macedon Ranges and starting a hobby farm,
-                  he witnessed firsthand the connectivity challenges faced by
-                  rural communities.
+                  he witnessed firsthand the connectivity gaps and automation challenges faced by
+                  local agriculture and rural communities.
                 </p>
                 <p>
                   Driven by a desire to apply his extensive expertise where
                   it is most needed, Gerard founded Camfor. Our goal is
-                  straightforward: to provide both rural and urban Victoria with access
-                  to reliable, high-speed connectivity. Transitioning from
-                  international projects to focusing on local needs,
-                  Gerard&apos;s journey underpins Camfor&apos;s commitment to
-                  enhancing digital accessibility for all.
+                  straightforward: to equip rural Victoria with reliable high-speed networks, 
+                  robust security hardware, and bespoke IoT telemetry systems.
+                </p>
+                <p>
+                  Transitioning from international operations to focusing on local needs,
+                  Gerard&apos;s journey—from global data infrastructure to specialised 
+                  farm automation—underpins Camfor&apos;s commitment to
+                  enhancing digital accessibility and innovation for all.
                 </p>
                 <p>
                   Through Camfor, we are turning Gerard&apos;s vision into
                   reality, ensuring no community is left behind in today&apos;s
-                  digital world.
+                  rapidly evolving digital landscape.
                 </p>
               </div>
               <Link
