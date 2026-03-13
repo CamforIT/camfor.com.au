@@ -22,7 +22,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <Image
-                src="/images/camfor-logo.png"
+                src="/images/camfor-logo.webp"
                 alt={`${siteConfig.shortName} Logo`}
                 width={80}
                 height={80}

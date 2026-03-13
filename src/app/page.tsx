@@ -31,7 +31,7 @@ export default function HomePage() {
       <section className="relative bg-gray-900 text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/hero-tech.jpg"
+            src="/images/hero-tech.webp"
             alt="Technology connectivity"
             fill
             className="object-cover opacity-30"
@@ -90,7 +90,7 @@ export default function HomePage() {
               </p>
               <div className="relative mt-8 h-64 md:h-80 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/security-assessment.jpg"
+                  src="/images/security-assessment.webp"
                   alt="Security solutions"
                   fill
                   className="object-cover"
@@ -159,14 +159,14 @@ export default function HomePage() {
           </h2>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-10 md:gap-16">
             <Image
-              src="/images/affinity-logo.png"
+              src="/images/affinity-logo.webp"
               alt="Affinity client logo"
               width={200}
               height={70}
               className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all"
             />
             <Image
-              src="/images/m2s-logo.png"
+              src="/images/m2s-logo.webp"
               alt="M2S client logo"
               width={175}
               height={60}
@@ -180,7 +180,7 @@ export default function HomePage() {
       <section className="relative bg-gray-900 text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/rural-landscape.jpg"
+            src="/images/rural-landscape.webp"
             alt="Rural Victorian landscape"
             fill
             className="object-cover opacity-20"
@@ -273,7 +273,7 @@ export default function HomePage() {
             </div>
             <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="/images/data-installation.jpg"
+                src="/images/data-installation.webp"
                 alt="Data installation services"
                 fill
                 className="object-cover"

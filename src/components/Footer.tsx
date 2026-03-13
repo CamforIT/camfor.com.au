@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-6">
             <Image
-              src="/images/camfor-logo.png"
+              src="/images/camfor-logo.webp"
               alt={`${siteConfig.shortName} Logo`}
               width={100}
               height={100}
@@ -46,7 +46,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Image
-              src="/images/camfor-logo.png"
+              src="/images/camfor-logo.webp"
               alt={`${siteConfig.shortName} Logo`}
               width={80}
               height={80}
